@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'FuturaPT';
+    src: url(../fonts/Futura-PT/FuturaPTBook.otf) format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FuturaPTMedium';
+    src: url(../fonts/Futura-PT/FuturaPTMedium.otf) format("opentype");
+    font-weight: 450;
+}
+
+@font-face {
+    font-family: 'FuturaPTDemi';
+    src: url(../fonts/Futura-PT/FuturaPTDemi.otf) format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'FuturaPTHeavy';
+    src: url(../fonts/Futura-PT/FuturaPTHeavy.otf) format("opentype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'FuturaPTBold';
+    src: url(../fonts/Futura-PT/FuturaPTBold.otf) format("opentype");
+    font-weight: 700;
+}
+
+/* Elementos */
+
+* {
+    margin: 0;
+    max-width: 100%;
+    --night: #0B0B0B;
+    --celestial-blue: #5998C5;
+    --anti-flash-white: #F4F5F6;
+}
+
+header {
+    font-size: 24px;
+    font-weight: 400;
+    height: 112px;
+    line-height: 112px;
+    background-color: var(--night);
+    backdrop-filter: blur(10px);
+    /* blur  */
+}
+
+header a {
+    text-decoration: none;
+    color: var(--anti-flash-white);
+}
+
+header ul {
+    display: inline-block;
+}
+
+header li {
+    margin: 0 20px;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    justify-content: space-evenly;
+}
+
+header nav li:hover {
+    color: var(--celestial-blue);
+    transition: 350ms;
+    transition-timing-function: linear;
+}
+
+header p:hover {
+    color: var(--celestial-blue);
+    transition: 350ms;
+    transition-timing-function: linear;
+}
+
+header span:hover {
+    color: var(--anti-flash-white);
+    transition: 350ms;
+    transition-timing-function: linear;
+}
+
+header #logo-semicolon {
+    font-size: 32px;
+    font-family: 'FuturaPTMedium';
+}
+
+nav {
+    transform: translateX(-50%);
+    /* move horizontalmente (x) o item. positivo = direita, negativo = esquerda */
+    left: 50%;
+    /* define a borda do lado esquerdo. no lado 50% do width do lado esquerdo será a borda do item. */
+    position: absolute;
+    /* torna a posição absoluta naquele lugar. */
+}
+
+span {
+    color: var(--celestial-blue);
+}
+
+
+body {
+    color: var(--anti-flash-white);
+    background: var(--night);
+    font-family: 'Futura PT', futura;
+}
+
+main {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    margin: 0;
+    font-family: 'FuturaPTDemi';
+    font-size: 56px;
+    margin-bottom: 60px;
+}
+
+main p {
+    font-family: 'FuturaPTMedium';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+/* Classes e Tags */
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1120px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fs13 {
+    font-size: 20px;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.svg-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+#tech {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#tech p {
+    font-family: 'FuturaPTMedium';
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#tech figure {
+    height: 72px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#tech figcaption {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.svg-tech-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-tech-icons figcaption {
+    font-family: 'FuturaPT';
+    font-size: 16px;
+}
