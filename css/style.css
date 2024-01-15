@@ -187,7 +187,7 @@ header .logo-img {
 }
 
 .sections {
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 50px;
     align-items: center;
 }
@@ -196,8 +196,19 @@ header .logo-img {
     padding-top: 50px;
     font-family: 'FuturaPTMedium';
     font-size: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: center;
+}
+
+#tech{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#tech svg:hover path{
+    fill: var(--celestial-blue);
+    transition: 300ms linear;
 }
 
 #tech figure {
@@ -239,13 +250,46 @@ header .logo-img {
     transition: 300ms linear;
 }
 
+.logo{
+    display: flex;
+    height: 25px;
+    line-height: 25px;
+    transition: 150ms ease-in-out;
+}
+
 .logo:hover {
     transform: scale(1.025);
-    transition: 300ms ease-in-out;
 }
 
 .about-text {
     font-family: 'FuturaPTMedium';
     font-size: 32px;
     text-align: center;
+}
+
+.arrow-down {
+    font-family: 'FuturaPT';
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down i:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.arrow-down a{
+    color: var(--anti-flash-white);
+    transition: 500ms ease;
+    scroll-behavior: smooth;
+}
+
+.arrow-down p {
+    font-family: 'FuturaPT';
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
