@@ -12,20 +12,22 @@
 <body>
     <header>
         <div class="container flexbox no-select">
-            <a href="./">
-                <p>Daniel Marinho<span id="logo-semicolon">;</span></p>
-            </a>
+            <div class="logof">
+                <a href="./">
+                    <img class="logo-img" src="./logo2.png" alt="Daniel Marinho;">
+                </a>
+            </div>
             <nav>
                 <ul>
-                    <a href="#tech">
-                        <li>Tecnologias</li>
-                    </a>
-                    <a href="#about">
-                        <li>Sobre</li>
-                    </a>
-                    <a href="#projects">
-                        <li>Projetos</li>
-                    </a>
+                    <li>
+                        <a href="#tech">Tecnologias</a>
+                    </li>
+                    <li>
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projetos</a>
+                    </li>
                 </ul>
             </nav>
             <a href="./en/">
@@ -38,28 +40,39 @@
 
     <main class="container">
         <svg id="topLeftEdge" class="svg-image top-left" width="100" height="100" viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M2.5 100V0M100 2.5H0" stroke="#5998C5" stroke-width="5" />
         </svg>
         <svg id="bottomRightEdge" class="svg-image bottom-right" width="100" height="100" viewBox="0 0 100 100"
-         xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M97.5 0V100M0 97.5H100" stroke="#5998C5" stroke-width="5" />
         </svg>
+        <!-- icons -->
         <div class="container">
-
-
             <h1>Bem Vindo<span>!</span></h1>
             <p>Me chamo Daniel<span>,</span> trabalho com programação web front<span>-</span>end<span>,</span><br>
-                edição de vídeos e gestão de redes sociais<span>.</span></h2>
+                edição de vídeos e gestão de redes sociais<span>.</span></p>
+            <div class="contact-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/" alt="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com" alt="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a target="_blank" href="https://github.com/danlmcosta/" alt="GitHub">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
         </div>
     </main>
 
-    <section class="container" id="tech">
-        <p>Algumas das Tecnologias que utilizo</p>
+    <section class="container sections" id="tech">
+        <p class="h2">Algumas das Tecnologias que utilizo</p>
         <div class="svg-tech-icons">
             <!-- Figma -->
             <figure>
-                <svg class="tech-icon" class="" width="47" height="72" viewBox="0 0 47 72" xmlns="http://www.w3.org/2000/svg">
+                <svg class="tech-icon" class="" width="47" height="72" viewBox="0 0 47 72"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M11.0723 72C5.02122 72 0.115827 67.0946 0.115827 61.0435C0.115827 54.9923 5.02122 50.087 11.0723 50.087H22.0289V61.0435C22.0289 67.0946 17.1235 72 11.0723 72ZM36 21.913H25.0435V0H36C42.0511 0 46.9565 4.90539 46.9565 10.9565C46.9565 17.0077 42.0511 21.913 36 21.913ZM10.9565 21.913H21.913V0H10.9565C4.90539 0 0 4.90539 0 10.9565C0 17.0077 4.90539 21.913 10.9565 21.913ZM10.9565 46.9565H21.913V25.0435H10.9565C4.90539 25.0435 0 29.9489 0 36C0 42.0511 4.90539 46.9565 10.9565 46.9565ZM34.4348 25.0435C31.9441 25.0435 29.5553 26.0329 27.7941 27.7941C26.0329 29.5553 25.0435 31.9441 25.0435 34.4348C25.0435 36.9255 26.0329 39.3142 27.7941 41.0754C29.5553 42.8367 31.9441 43.8261 34.4348 43.8261C36.9255 43.8261 39.3142 42.8367 41.0754 41.0754C42.8367 39.3142 43.8261 36.9255 43.8261 34.4348C43.8261 31.9441 42.8367 29.5553 41.0754 27.7941C39.3142 26.0329 36.9255 25.0435 34.4348 25.0435Z"
                         fill="#F4F5F6" />
@@ -68,7 +81,7 @@
             </figure>
 
             <!-- CSS3 -->
-            <figure> 
+            <figure>
                 <svg class="tech-icon" width="65" height="72" viewBox="0 0 65 72" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0 0L7.2 64.8L32.3719 72L57.6 64.8L64.8 0H0ZM49.4156 30.0516L48.0375 52.5234L32.4984 57.6L16.9594 52.5234L16.3688 41.7797H24.2438L24.4406 46.6594L32.4984 49.4016L40.5703 46.6594L41.1609 37.8703H23.85L23.4563 30.0516H41.5406L42.1313 22.2328H14.9906L14.4 14.4281H50.4L49.4156 30.0516Z"
@@ -109,6 +122,29 @@
         </div>
     </section>
 
+    <section class="container sections" id="about">
+        <p class="h2">Sobre mim</p>
+        <p class="about-text">Me chamo Daniel Marinho, sou formado em Programação Web pelo
+            Senac e pelo IFBA, sou falante fluente de inglês e estudo alemão.</p>
+    </section>
+
+    <section class="container sections" id="projects">
+        <p class="h2">Projetos</p>
+    </section>
 </body>
+<footer class="container flexbox">
+    <p class="no-select">© Todos os direitos reservados, Daniel Marinho.</p>
+    <div class="contact-icons">
+        <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/" alt="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+        </a>
+        <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com" alt="Email">
+            <i class="bi bi-envelope-fill"></i>
+        </a>
+        <a target="_blank" href="https://github.com/danlmcosta/" alt="GitHub">
+            <i class="bi bi-github"></i>
+        </a>
+    </div>
+</footer>
 
 </html>

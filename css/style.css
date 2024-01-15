@@ -1,31 +1,33 @@
 @font-face {
+    font-family: 'FuturaPTLight';
+    src: url(../fonts/FuturaPTLight.otf) format("opentype");
+}
+
+@font-face {
     font-family: 'FuturaPT';
     src: url(../fonts/FuturaPTBook.otf) format("opentype");
-    font-weight: 400;
 }
 
 @font-face {
     font-family: 'FuturaPTMedium';
     src: url(../fonts/FuturaPTMedium.otf) format("opentype");
-    font-weight: 450;
 }
 
 @font-face {
     font-family: 'FuturaPTDemi';
     src: url(../fonts/FuturaPTDemi.otf) format("opentype");
-    font-weight: 500;
 }
 
 @font-face {
     font-family: 'FuturaPTHeavy';
     src: url(../fonts/FuturaPTHeavy.otf) format("opentype");
-    font-weight: 600;
+
 }
 
 @font-face {
     font-family: 'FuturaPTBold';
     src: url(../fonts/FuturaPTBold.otf) format("opentype");
-    font-weight: 700;
+
 }
 
 /* Elementos */
@@ -36,6 +38,11 @@
     --night: #0B0B0B;
     --celestial-blue: #5998C5;
     --anti-flash-white: #F4F5F6;
+}
+
+a {
+    text-decoration: none;
+
 }
 
 header {
@@ -49,7 +56,6 @@ header {
 }
 
 header a {
-    text-decoration: none;
     color: var(--anti-flash-white);
 }
 
@@ -65,31 +71,18 @@ header li {
     justify-content: space-evenly;
 }
 
-header nav li:hover {
-
+header nav a:hover {
     color: var(--celestial-blue);
-    transition: 350ms;
+    transition: 300ms;
     transition-timing-function: linear;
-    text-decoration: underline;
     text-decoration-thickness: 3px;
 
 }
 
 header p:hover {
     color: var(--celestial-blue);
-    transition: 350ms;
+    transition: 300ms;
     transition-timing-function: linear;
-}
-
-header span:hover {
-    color: var(--anti-flash-white);
-    transition: 350ms;
-    transition-timing-function: linear;
-}
-
-header #logo-semicolon {
-    font-size: 32px;
-    font-family: 'FuturaPTMedium';
 }
 
 nav {
@@ -124,6 +117,7 @@ main {
 main h1 {
     margin: 0;
     font-family: 'FuturaPTDemi';
+    font-weight: 500;
     font-size: 56px;
     margin-bottom: 60px;
 }
@@ -132,6 +126,24 @@ main p {
     font-family: 'FuturaPTMedium';
     font-size: 32px;
     font-weight: 300;
+}
+
+footer {
+    height: 125px;
+}
+
+footer p {
+    font-family: 'FuturaPT';
+    font-size: 24px;
+}
+
+footer p:hover {
+    color: var(--celestial-blue);
+    transition: 300ms linear;
+}
+
+header .logo-img {
+    width: 154px;
 }
 
 /* Classes e Tags */
@@ -174,16 +186,17 @@ main p {
     right: 0;
 }
 
-#tech {
-    margin-top: 50px;
+.sections {
+    margin-top: 150px;
     margin-bottom: 50px;
     align-items: center;
 }
 
-#tech p {
+.h2 {
+    padding-top: 50px;
     font-family: 'FuturaPTMedium';
-    font-size: 32px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -207,5 +220,32 @@ main p {
 
 .svg-tech-icons figcaption {
     font-family: 'FuturaPT';
+    font-weight: 200;
     font-size: 16px;
+}
+
+.contact-icons {
+    margin-top: 25px;
+}
+
+.contact-icons a {
+    color: var(--anti-flash-white);
+    margin: 0 12.5px;
+    font-size: 25px;
+}
+
+.contact-icons a:hover {
+    color: var(--celestial-blue);
+    transition: 300ms linear;
+}
+
+.logo:hover {
+    transform: scale(1.025);
+    transition: 300ms ease-in-out;
+}
+
+.about-text {
+    font-family: 'FuturaPTMedium';
+    font-size: 32px;
+    text-align: center;
 }
