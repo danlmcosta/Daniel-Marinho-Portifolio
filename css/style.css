@@ -30,14 +30,18 @@
 
 }
 
+:root {
+    --night: #0B0B0B;
+    --celestial-blue: #5998C5;
+    --anti-flash-white: #F4F5F6;
+}
+
 /* Elementos */
 
 * {
     margin: 0;
     max-width: 100%;
-    --night: #0B0B0B;
-    --celestial-blue: #5998C5;
-    --anti-flash-white: #F4F5F6;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -69,19 +73,20 @@ header li {
     list-style: none;
     display: inline;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 header nav a:hover {
     color: var(--celestial-blue);
-    transition: 300ms;
+    transition: 150ms;
     transition-timing-function: linear;
     text-decoration-thickness: 3px;
-
+    transform: scale(1.5);
 }
 
 header p:hover {
     color: var(--celestial-blue);
-    transition: 300ms;
+    transition: 150ms;
     transition-timing-function: linear;
 }
 
@@ -139,7 +144,7 @@ footer p {
 
 footer p:hover {
     color: var(--celestial-blue);
-    transition: 300ms linear;
+    transition: 150ms linear;
 }
 
 header .logo-img {
@@ -187,7 +192,7 @@ header .logo-img {
 }
 
 .sections {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
     align-items: center;
 }
@@ -200,15 +205,15 @@ header .logo-img {
     text-align: center;
 }
 
-#tech{
-    margin-top: 80px;
+#tech {
+    margin-top: 50px;
     margin-bottom: 50px;
     align-items: center;
 }
 
-#tech svg:hover path{
+#tech svg:hover path {
     fill: var(--celestial-blue);
-    transition: 300ms linear;
+    transition: 150ms linear;
 }
 
 #tech figure {
@@ -247,10 +252,10 @@ header .logo-img {
 
 .contact-icons a:hover {
     color: var(--celestial-blue);
-    transition: 300ms linear;
+    transition: 150ms linear;
 }
 
-.logo{
+.logo {
     display: flex;
     height: 25px;
     line-height: 25px;
@@ -265,31 +270,4 @@ header .logo-img {
     font-family: 'FuturaPTMedium';
     font-size: 32px;
     text-align: center;
-}
-
-.arrow-down {
-    font-family: 'FuturaPT';
-    font-size: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow-down i:hover{
-    transform: scale(1.1);
-    transition: 300ms;
-}
-
-.arrow-down a{
-    color: var(--anti-flash-white);
-    transition: 500ms ease;
-    scroll-behavior: smooth;
-}
-
-.arrow-down p {
-    font-family: 'FuturaPT';
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
 }
