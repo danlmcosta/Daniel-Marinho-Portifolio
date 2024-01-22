@@ -283,6 +283,7 @@ header .logo-img {
     flex-direction: row;
     align-items: center;
     margin-bottom: 70px;
+    margin-right: auto;
 }
 
 .box-right {
@@ -290,6 +291,7 @@ header .logo-img {
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 70px;
+    margin-left: auto;
 }
 
 .box-img-left {
@@ -351,4 +353,8 @@ header .logo-img {
 .see-btn:hover {
     background: var(--celestial-blue);
     transition: 300ms linear;
+}
+
+.align-left{
+    justify-content: flex-start;
 }
