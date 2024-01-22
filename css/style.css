@@ -354,6 +354,7 @@ header .logo-img {
 .see-btn:hover {
     background: var(--celestial-blue);
     transition: 300ms linear;
+    cursor: pointer;
 }
 
 .align-left {
