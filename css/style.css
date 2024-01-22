@@ -338,6 +338,7 @@ header .logo-img {
 .see-btn-right {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .see-btn p {
