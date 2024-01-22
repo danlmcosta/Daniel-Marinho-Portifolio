@@ -44,6 +44,12 @@
     scroll-behavior: smooth;
 }
 
+body {
+    color: var(--anti-flash-white);
+    background: var(--night);
+    font-family: 'FuturaPT';
+}
+
 a {
     text-decoration: none;
 
@@ -104,11 +110,6 @@ span {
 }
 
 
-body {
-    color: var(--anti-flash-white);
-    background: var(--night);
-    font-family: 'Futura PT';
-}
 
 main {
     position: relative;
