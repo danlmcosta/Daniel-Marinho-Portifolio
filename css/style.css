@@ -356,6 +356,6 @@ header .logo-img {
     transition: 300ms linear;
 }
 
-.align-left{
+.align-left {
     justify-content: flex-start;
 }
