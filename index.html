@@ -10,9 +10,9 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <div class="container flexbox no-select">
+        <div class="flexbox">
             <div class="logo">
                 <a href="./">
                     <img class="logo-img" src="./logo2.png" alt="Daniel Marinho;">
@@ -39,7 +39,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main>
         <svg id="topLeftEdge" class="svg-image top-left" width="100" height="100" viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M2.5 100V0M100 2.5H0" stroke="#5998C5" stroke-width="5" />
@@ -50,20 +50,20 @@
         </svg>
 
         <!-- presentation -->
-        <div class="container">
+        <div>
             <h1>Bem Vindo<span>!</span></h1>
             <p>Me chamo Daniel<span>,</span> trabalho com programação web front<span>-</span>end<span>,</span><br>
                 edição de vídeos e gestão de redes sociais<span>.</span></p>
 
             <!-- icons -->
             <div class="contact-icons">
-                <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/" alt="LinkedIn">
+                <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/">
                     <i class="bi bi-linkedin"></i>
                 </a>
-                <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com" alt="Email">
+                <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com">
                     <i class="bi bi-envelope-fill"></i>
                 </a>
-                <a target="_blank" href="https://github.com/danlmcosta/" alt="GitHub">
+                <a target="_blank" href="https://github.com/danlmcosta/">
                     <i class="bi bi-github"></i>
                 </a>
             </div>
@@ -71,8 +71,8 @@
     </main>
 
     <!-- Tech -->
-    <section class="container" id="tech">
-        <p class="h2">Algumas das tecnologias que utilizo</p>
+    <h2 class="sections" id="tech">
+        <p class="inline-heading">Algumas das tecnologias que utilizo</p>
         <div class="svg-tech-icons">
             <!-- Figma -->
             <figure>
@@ -125,40 +125,44 @@
                 <figcaption>Photopea</figcaption>
             </figure>
         </div>
-    </section>
+    </h2>
 
-    <!-- Abpit -->
-    <section class="container sections" id="about">
-        <p class="h2">Sobre mim</p>
+    <!-- About -->
+    <h2 class="sections" id="about">
+        <p class="inline-heading">Sobre mim</p>
         <p class="about-text">Me chamo Daniel Marinho<span>,</span> sou formado em <b>Programação Web</b> pelo
-            Senac e <br> <b>Desenhista de Produtos Gráficos Web</b> pelo IFBA<span>.</span> Sou falante de
+            <abbr title="Serviço Nacional de Aprendizagem Comercial">Senac</abbr> e <br> <b>Desenhista de Produtos
+                Gráficos Web</b> pelo <abbr
+                title="Instituto Federal de Educação, Ciência e Tecnologia da Bahia">IFBA</abbr><span>.</span> Sou
+            falante de
             inglês fluente <span>—</span> certificado C1 <span>(</span>Advanced<span>)</span> no
             <a href="https://www.efset.org/cert/Hui1tJ" target="_blank" class="efset">EF SET</a> <span>—</span> e
             estudante de alemão
             iniciante<span>.</span>
         </p>
-    </section>
+    </h2>
 
 
     <!-- Projects -->
-    <section class="container sections" id="projects">
-        <p class="h2">Projetos</p>
-        <div id="projects-items" class="no-select">
+    <h2 class="sections" id="projects">
+        <p class="inline-heading">Projetos</p>
+        <div id="projects-items">
 
             <!-- Card 1 -->
             <div class="card box-left align-left">
                 <div class="box box-img-left">
-                    <img src="./images/cards/ePescados.png" alt="ePescados">
+                    <a href="https://bit.ly/epescados" target="_blank">
+                        <img src="./images/cards/ePescados.png" alt="ePescados">
+                    </a>
                 </div>
                 <div class="box-text-left">
                     <p><strong>ePescados</strong></p>
                     <p>Meu primeiro layout do projeto de um app de pescados<span>,</span> com objetivo de informar sobre
                         a venda e localização de
-                        pescados
-                        na cidade de <br> Salinas da Margarida<span>.</span>
+                        pescados<span>.</span>
                     </p>
                     <a href="https://bit.ly/epescados" target="_blank">
-                        <div class="see-btn">
+                        <div class="see-btn no-select">
                             <p>VER</p>
                             <i class="bi bi-arrow-right-short"></i>
                         </div>
@@ -188,22 +192,24 @@
             </div> -->
 
         </div>
-    </section>
+    </h2>
+
+    <footer class="flexbox">
+        <p>&copy; 2024 Daniel Marinho<span>.</span></p>
+        <div class="contact-icons">
+            <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+            <a target="_blank" href="https://github.com/danlmcosta/">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 
-<footer class="container flexbox">
-    <p class="no-select">&copy; 2024 Daniel Marinho<span>.</span></p>
-    <div class="contact-icons">
-        <a target="_blank" href="https://www.linkedin.com/in/danlmcosta/" alt="LinkedIn">
-            <i class="bi bi-linkedin"></i>
-        </a>
-        <a target="_blank" href="mailto:marinhodaniel.contato@gmail.com" alt="Email">
-            <i class="bi bi-envelope-fill"></i>
-        </a>
-        <a target="_blank" href="https://github.com/danlmcosta/" alt="GitHub">
-            <i class="bi bi-github"></i>
-        </a>
-    </div>
-</footer>
+
 
 </html>
