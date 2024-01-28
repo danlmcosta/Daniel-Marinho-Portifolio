@@ -52,6 +52,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--anti-flash-white);
 
 }
 
@@ -332,7 +333,7 @@ header .logo-img {
     height: 25px;
     border: 0.25px solid var(--anti-flash-white);
     border-radius: 15px;
-    margin-top: 8px;
+    margin-top: 10px;
     padding-left: 6px;
 }
 
@@ -360,4 +361,33 @@ header .logo-img {
 
 .align-left {
     justify-content: flex-start;
+}
+
+.about-text a {
+    color: var(--anti-flash-white);
+    text-decoration: underline;
+    text-decoration-color: var(--anti-flash-white);
+    text-underline-offset: 7px;
+}
+
+.about-text a:hover {
+    color: var(--celestial-blue);
+    text-decoration-line: underline;
+    text-decoration-color: var(--celestial-blue);
+    transition: .3s linear;
+}
+
+.card{
+    transition: 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 /*<- horizontal */ 0 /*<- vertical */ 7px /* <- blur */ 3px /*<- tamanho */ rgb(0, 0, 0);
+    
+}
+
+.card:hover .box {
+    transition: 450ms ease-in-out;
 }
