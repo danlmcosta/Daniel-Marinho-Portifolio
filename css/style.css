@@ -215,13 +215,18 @@ header .logo-img {
 
 #tech svg:hover path {
     fill: var(--celestial-blue);
-    transition: 150ms linear;
+    transition: 150ms ease-in-out;
 }
 
 #tech figure {
     height: 72px;
     padding-left: 25px;
     padding-right: 25px;
+    transition: 300ms ease-in-out;
+}
+
+#tech figure:hover {
+    transform: scale(1.05);
 }
 
 #tech figcaption {
@@ -365,27 +370,20 @@ header .logo-img {
 
 .about-text a {
     color: var(--anti-flash-white);
-    text-decoration: underline;
-    text-decoration-color: var(--anti-flash-white);
     text-underline-offset: 7px;
 }
 
 .about-text a:hover {
     color: var(--celestial-blue);
-    text-decoration-line: underline;
-    text-decoration-color: var(--celestial-blue);
     transition: .3s linear;
 }
 
-.card{
-    transition: 300ms ease-in-out;
+.card {
+    transition: 450ms ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    
-    box-shadow: 0 /*<- horizontal */ 0 /*<- vertical */ 7px /* <- blur */ 3px /*<- tamanho */ rgb(0, 0, 0);
-    
+    transform: scale(1.075);
 }
 
 .card:hover .box {
