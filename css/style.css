@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'FuturaPTLight';
-    src: url(../fonts/FuturaPTLight.otf) format("opentype");
-}
-
-@font-face {
     font-family: 'FuturaPT';
     src: url(../fonts/FuturaPTBook.otf) format("opentype");
 }
@@ -16,18 +11,6 @@
 @font-face {
     font-family: 'FuturaPTDemi';
     src: url(../fonts/FuturaPTDemi.otf) format("opentype");
-}
-
-@font-face {
-    font-family: 'FuturaPTHeavy';
-    src: url(../fonts/FuturaPTHeavy.otf) format("opentype");
-
-}
-
-@font-face {
-    font-family: 'FuturaPTBold';
-    src: url(../fonts/FuturaPTBold.otf) format("opentype");
-
 }
 
 :root {
@@ -252,9 +235,6 @@ header .logo-img {
     font-size: 16px;
 }
 
-.contact-icons {
-    margin-top: 30px;
-}
 
 .contact-icons a {
     color: var(--anti-flash-white);
@@ -307,17 +287,15 @@ header .logo-img {
     margin-left: auto;
 }
 
-.box-img-left {
+.box-img-left img{
     width: 350px;
     height: 350px;
-    background-color: var(--anti-flash-white);
     margin-right: 35px;
 }
 
-.box-img-right {
+.box-img-right img{
     width: 350px;
     height: 350px;
-    background-color: var(--anti-flash-white);
     margin-left: 35px;
 }
 
