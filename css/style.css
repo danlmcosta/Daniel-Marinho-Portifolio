@@ -125,7 +125,6 @@ footer {
 }
 
 footer p {
-    font-family: 'FuturaPT';
     font-size: 24px;
 }
 
@@ -181,13 +180,11 @@ header .logo-img {
 }
 
 .sections {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
     align-items: center;
 }
 
 .inline-heading {
-    padding-top: 50px;
     font-family: 'FuturaPTMedium';
     font-weight: 100;
     font-size: 40px;
@@ -196,8 +193,6 @@ header .logo-img {
 }
 
 #tech {
-    margin-top: 50px;
-    margin-bottom: 50px;
     align-items: center;
 }
 
@@ -211,6 +206,8 @@ header .logo-img {
     padding-left: 25px;
     padding-right: 25px;
     transition: 300ms ease-in-out;
+    position: relative;
+    padding-bottom: 35px;
 }
 
 #tech figure:hover {
@@ -218,7 +215,7 @@ header .logo-img {
 }
 
 #tech figcaption {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
 }
 
@@ -230,11 +227,13 @@ header .logo-img {
 }
 
 .svg-tech-icons figcaption {
-    font-family: 'FuturaPT';
     font-weight: 200;
     font-size: 16px;
 }
 
+.contact-icons {
+    margin-top: 40px;
+}
 
 .contact-icons a {
     color: var(--anti-flash-white);
@@ -242,7 +241,18 @@ header .logo-img {
     font-size: 25px;
 }
 
+.footer-icons a {
+    color: var(--anti-flash-white);
+    margin: 0 12.5px;
+    font-size: 25px;
+}
+
 .contact-icons a:hover {
+    color: var(--celestial-blue);
+    transition: 150ms linear;
+}
+
+.footer-icons a:hover {
     color: var(--celestial-blue);
     transition: 150ms linear;
 }
@@ -287,29 +297,27 @@ header .logo-img {
     margin-left: auto;
 }
 
-.box-img-left img{
-    width: 350px;
-    height: 350px;
+.box-img-left img {
+    width: 300px;
+    height: 300px;
     margin-right: 35px;
 }
 
-.box-img-right img{
-    width: 350px;
-    height: 350px;
+.box-img-right img {
+    width: 300px;
+    height: 300px;
     margin-left: 35px;
 }
 
 .box-text-left {
-    font-family: 'FuturaPT';
     font-weight: 100;
-    font-size: 24px;
+    font-size: 26px;
     width: 456px;
     text-align: start;
 }
 
 .box-text-right {
-    font-family: 'FuturaPT';
-    font-size: 24px;
+    font-size: 26px;
     width: 456px;
     text-align: end;
 }
@@ -334,7 +342,6 @@ header .logo-img {
 }
 
 .see-btn p {
-    font-family: 'FuturaPT';
     font-size: 16px;
     font-weight: 100;
 }
