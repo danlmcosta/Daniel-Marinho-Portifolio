@@ -68,7 +68,7 @@ header li {
 
 header nav a:hover {
     color: var(--celestial-blue);
-    transition: 150ms;
+    transition: 250ms;
     transition-timing-function: linear;
     text-decoration-thickness: 3px;
     transform: scale(1.5);
@@ -76,7 +76,7 @@ header nav a:hover {
 
 header p:hover {
     color: var(--celestial-blue);
-    transition: 150ms;
+    transition: 250ms;
     transition-timing-function: linear;
 }
 
@@ -130,7 +130,7 @@ footer p {
 
 footer p:hover {
     color: var(--celestial-blue);
-    transition: 150ms linear;
+    transition: 250ms linear;
 }
 
 header .logo-img {
@@ -198,14 +198,14 @@ header .logo-img {
 
 #tech svg:hover path {
     fill: var(--celestial-blue);
-    transition: 150ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 #tech figure {
     height: 72px;
     padding-left: 25px;
     padding-right: 25px;
-    transition: 300ms ease-in-out;
+    transition: 350ms ease-in-out;
     position: relative;
     padding-bottom: 35px;
 }
@@ -249,19 +249,19 @@ header .logo-img {
 
 .contact-icons a:hover {
     color: var(--celestial-blue);
-    transition: 150ms linear;
+    transition: 250ms linear;
 }
 
 .footer-icons a:hover {
     color: var(--celestial-blue);
-    transition: 150ms linear;
+    transition: 250ms linear;
 }
 
 .logo {
     display: flex;
     height: 25px;
     line-height: 25px;
-    transition: 150ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 .logo:hover {
@@ -378,6 +378,10 @@ header .logo-img {
     transform: scale(1.075);
 }
 
-.card:hover .box {
-    transition: 450ms ease-in-out;
+.box{
+    transition: 425ms ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.075);
 }
